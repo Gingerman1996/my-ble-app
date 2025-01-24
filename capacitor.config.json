@@ -1,0 +1,6 @@
+{
+  "appId": "com.ble.bleapp",
+  "appName": "MyBLEApp",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
