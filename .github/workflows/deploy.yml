@@ -20,11 +20,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project (ถ้ามี)
-        run: npm run build  # ถ้าเป็น Static HTML ให้ลบขั้นตอนนี้ออก
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GH_PAT }}
-          publish_dir: ./dist  # หรือเปลี่ยนเป็น . ถ้าใช้ root directory
+          publish_dir: .  # ใช้ root directory ถ้าเป็น Static HTML
